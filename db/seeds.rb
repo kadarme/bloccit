@@ -41,7 +41,7 @@ posts = Post.all
 user = User.first
 user.skip_reconfirmation!
 user.update_attributes!(
-  email:  'kn.adarme@gmail.com',
+  email:  'knadarme@gmail.com',
   password: 'helloworld')
 
 puts "Seed finished"
