@@ -41,4 +41,6 @@ Rails.application.configure do
   #Override Action Mailer's 'silent errors' in development
   config.action_mailer.raise_delivery_errors = true
 
+  # Better errors on a virtual machine. 
+  BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']
 end
