@@ -40,4 +40,7 @@ Rails.application.configure do
 
   # Better errors on a virtual machine. 
   BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']
+  
+  # Raise informative errors if Action Mailer fails
+  config.raise_delivery_errors = true
 end
