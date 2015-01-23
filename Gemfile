@@ -20,6 +20,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails', '~> 4.0'
+  gem 'pry-rails'
 end
 
 # Use SCSS for stylesheets
@@ -75,3 +76,5 @@ gem 'mini_magick'
 gem 'fog'
 
 gem 'will_paginate', '~> 3.0.5'
+
+gem 'newrelic_rpm'
